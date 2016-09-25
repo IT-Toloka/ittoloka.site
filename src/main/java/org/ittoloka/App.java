@@ -1,23 +1,21 @@
 package org.ittoloka;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 /**
  * Created by SeVlad on 25.09.2016.
  */
-@Controller
-@EnableAutoConfiguration
-public class App {
+@SpringBootApplication
+public class App extends SpringBootServletInitializer{
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
     }
 
-    @RequestMapping("/")
-    String home(){
-        return "home";
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(App.class);
     }
 }
