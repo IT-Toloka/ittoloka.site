@@ -12,6 +12,9 @@ public class Solution {
         User user;
         user = (User) context.getBean("user");
         System.out.println(user);
+        Logger logger = (Logger)context.getBean("logger");
+        logger.writeConsole("Hello console");
+        logger.writeFile("Hello file!");
     }
 
 }
