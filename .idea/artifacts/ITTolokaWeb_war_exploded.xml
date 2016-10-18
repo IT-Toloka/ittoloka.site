@@ -37,7 +37,7 @@
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.4" />
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.4" />
           <element id="library" level="project" name="Maven: org.eclipse.jdt.core.compiler:ecj:4.5.1" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-jsp:3.0.7" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-servlet:3.0.7" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-servlet:1.0.6" />
